@@ -1,0 +1,3 @@
+api_endpoints:
+  - endpoint: http://servicex-servicex-app:8000/
+    type: xaod
