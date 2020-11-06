@@ -1,12 +1,7 @@
 postgres:
-    enabled: true
+  enabled: true
 objectStore:
-  publicURL: servicex-minio:9000
-
-transformer:
-  autoscalerEnabled: true
-  # cpuLimit: 0.6
-  cpuScaleThreshold: 30
+  publicURL: localhost:9000
 
 gridAccount: ivukotic
 
@@ -17,10 +12,8 @@ codeGen:
 
   # Or for flat root files
   # image: sslhep/servicex_code_gen_func_adl_uproot
-
   # Or for miniAOD
   # image: sslhep/servicex_code_gen_config_file
-
 
 preflight:
   # Choose one of the following images to include in your values.yaml:
@@ -38,3 +31,7 @@ didFinder:
 x509Secrets:
   # For ATLAS
   vomsOrg: atlas
+app:
+  ingress:
+    enabled: true
+    host: <domain name for your deployment>
