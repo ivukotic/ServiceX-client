@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: cern-root
+spec:
+  containers:
+    - name: cern-root
+      image: rootproject/root
+      command:
+        - "sleep"
+      args: ["36500000"]

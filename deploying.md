@@ -1,5 +1,8 @@
 
+* https://servicex.readthedocs.io/en/latest/
+
 pip install servicex-cli==1.0.0rc3
+
 kubectl config use-context docker-desktop
 servicex init --cert-dir C:\Users\ilija\.globus # --namespace=sx-ilija
 helm repo add ssl-hep https://ssl-hep.github.io/ssl-helm-charts/

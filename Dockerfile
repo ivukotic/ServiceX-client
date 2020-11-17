@@ -1,4 +1,4 @@
-FROM python:3.7-slim 
+FROM python:3.8-slim 
 
 RUN apt-get -y update
 RUN apt-get -y install vim wget dnsutils
