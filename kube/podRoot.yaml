@@ -9,3 +9,8 @@ spec:
       command:
         - "sleep"
       args: ["36500000"]
+# wget http://software.igwn.org/gridtools/debian/pool/main/o/osg-ca-certs/osg-ca-certs_1.83NEW-1_all.deb
+# dpkg -i osg-ca-certs_1.83NEW-1_all.deb
+# export X509_USER_PROXY=/root/proxy
+# root -l
+# f=TFile::Open("root://xrootd-at2-door.pic.es:1094/pnfs/pic.es/IFAEAtlasTier2/t2atlasdatadisk/rucio/mc16_13TeV/2e/da/AOD.20798297._000879.pool.root.1")
