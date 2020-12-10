@@ -3,6 +3,11 @@ postgres:
 objectStore:
   publicURL: localhost:9000
 
+transformer:
+  autoscalerEnabled: true
+  # cpuLimit: 0.6
+  cpuScaleThreshold: 30
+
 gridAccount: ivukotic
 
 codeGen:
@@ -31,7 +36,8 @@ didFinder:
 x509Secrets:
   # For ATLAS
   vomsOrg: atlas
+
 app:
   ingress:
     enabled: true
-    host: <domain name for your deployment>
+    host: vukotic.me

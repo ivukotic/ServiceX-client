@@ -1,5 +1,5 @@
 postgres:
-    enabled: true
+  enabled: true
 objectStore:
   publicURL: servicex-minio:9000
 
