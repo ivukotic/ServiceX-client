@@ -41,3 +41,6 @@ app:
   ingress:
     enabled: true
     host: vukotic.me
+    annotations:
+      cert-manager.io/cluster-issuer: letsencrypt-prod
+      kubernetes.io/ingress.class: slate

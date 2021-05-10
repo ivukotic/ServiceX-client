@@ -1,3 +1,6 @@
 api_endpoints:
   - endpoint: https://servicex.vukotic.me/
     type: xaod
+  # # run at the localhost with k8s proxy to the app.
+  # - endpoint: localhost:8000
+  #   type: xaod

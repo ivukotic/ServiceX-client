@@ -25,10 +25,10 @@ START /B kubectl port-forward service/servicex-postgresql 5432:5432
 Client
 kubectl run tmp-shell --rm -i --tty --image python:3.7-slim -- /bin/bash
 apt-get update
-apt-get install vim
-vi .servicex
+apt-get -y install vim
+vi servicex.yaml
 
-python -m pip install func-adl-servicex==1.0
+python -m pip install func-adl-servicex
 
 ### GCE
 pip3 install servicex-cli==1.0.0rc3

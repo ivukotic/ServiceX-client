@@ -7,6 +7,7 @@ transformer:
   autoscalerEnabled: true
   # cpuLimit: 0.6
   cpuScaleThreshold: 30
+  image: sslhep/servicex_func_adl_xaod_transformer:develop
 
 gridAccount: ivukotic
 
