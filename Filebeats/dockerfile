@@ -1,0 +1,4 @@
+FROM alpine:3.7
+COPY logger.sh /
+RUN chmod +x logger.sh
+# ENTRYPOINT ["./logger.sh"]
