@@ -7,7 +7,8 @@ dataset_name = "mc15_13TeV:mc15_13TeV.361106.PowhegPythia8EvtGen_AZNLOCTEQ6L1_Ze
 src = ServiceXSourceXAOD(dataset_name)
 df = src \
     .SelectMany('lambda e: e.Jets("AntiKt4EMTopoJets")') \
-    .Select('lambda j: j.pt()/'+str(random.random())) \
+    .Where('lambda j: j.pt() / '+str(random.random())+' > 30.0') \
+    .Select('lambda j: j.eta()') \
     .AsPandasDF('JetPt') \
     .value()
 print(df)
