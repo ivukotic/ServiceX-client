@@ -1,2 +1,11 @@
 python3 -m pip --disable-pip-version-check --no-cache-dir --no-input install servicex-clients
-python3 test.py
+
+
+# xaod single variable no calculations to pandas df
+python3 test_1.py
+
+# xaod 8 variables from 2 collections to awkward array
+python3 test_2.py
+
+# uproot single variable no calculations to pandas df
+python3 test_101.py

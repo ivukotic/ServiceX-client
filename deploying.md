@@ -1,7 +1,11 @@
 
 * https://servicex.readthedocs.io/en/latest/
 
-pip install servicex-cli==1.0.0
+<!-- pip install servicex-cli==1.0.0 -->
+    /usr/bin/python3.6 -m pip install servicex
+    /usr/bin/python3.6 -m pip install servicex_clients
+/usr/bin/python3.6 -m pip install coffea[servicex]
+
 
 kubectl config use-context docker-desktop
 servicex init --cert-dir C:\Users\ilija\.globus # --namespace=sx-ilija

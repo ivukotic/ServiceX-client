@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: xaod-logger
+spec:
+  containers:
+    - name: logger
+      image: ivukotic/logger
+      command:
+        - "bin/sh"
+      args: ["logger.sh"]
