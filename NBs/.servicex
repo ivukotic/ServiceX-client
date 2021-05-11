@@ -1,0 +1,3 @@
+api_endpoints:
+  - endpoint: https://servicex.vukotic.me/
+    type: xaod
