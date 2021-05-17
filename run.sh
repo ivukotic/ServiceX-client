@@ -1,5 +1,3 @@
-# python3 -m pip --disable-pip-version-check --no-cache-dir --no-input install servicex-clients
-
 date
 echo "check rucio knows the node location"
 python3 test_location.py
