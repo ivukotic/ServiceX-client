@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: single-test
+  labels:
+    k8s-app: single-test
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      k8s-app: single-test
+  template:
+    metadata:
+      labels:
+        k8s-app: single-test
+    spec:
+      containers:
+        - name: test-1
+          image: ivukotic/servicex-test:latest
+          # imagePullPolicy: IfNotPresent
+          command: ["python3"]
+          args: ["test_1.py"]
+          resources:
+            requests:
+              memory: "512Mi"
+              cpu: "500m"
+            limits:
+              memory: "1024Mi"
+              cpu: "1000m"
