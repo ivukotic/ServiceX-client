@@ -23,6 +23,6 @@ jobs:
           registry: docker.io
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
-      - name: Inspect
-        run: |
-          docker image inspect servicex-test:latest
+      # - name: Inspect
+      #   run: |
+      #     docker image inspect servicex-test:latest
