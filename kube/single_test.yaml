@@ -24,6 +24,8 @@ spec:
               "test_1.py",
               "data15_13TeV:data15_13TeV.00283429.physics_Main.deriv.DAOD_PHYS.r9264_p3083_p4165_tid21568817_00",
             ]
+          # command: ["sleep"]
+          # args: ["36500000"]
           resources:
             requests:
               memory: "512Mi"

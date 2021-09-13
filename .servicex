@@ -1,3 +1,4 @@
 api_endpoints:
-  - endpoint: https://servicex.vukotic.me/
+  - endpoint: https://xaod.servicex.ssl-hep.org/
+    token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MDc0NTg4MTMsIm5iZiI6MTYwNzQ1ODgxMywianRpIjoiOWQ5NDc4YjctNjBlMC00YTU3LWFkOGEtMzg2M2U2MWJjMjU0IiwiaWRlbnRpdHkiOiJhNTFkYmQ3ZS1kMjc0LTExZTUtOWIxMS05YmUzNDdhMDljZTAiLCJ0eXBlIjoicmVmcmVzaCJ9.zcggkKv0oLV2oWVlJGHtqekF-MNkl_0Mz5RI4DmqiCQ
     type: xaod
