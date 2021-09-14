@@ -1,13 +1,3 @@
-# api_endpoints:
-#   - endpoint: https://xaod.servicex.ssl-hep.org/
-#     token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MDc0NTg4MTMsIm5iZiI6MTYwNzQ1ODgxMywianRpIjoiOWQ5NDc4YjctNjBlMC00YTU3LWFkOGEtMzg2M2U2MWJjMjU0IiwiaWRlbnRpdHkiOiJhNTFkYmQ3ZS1kMjc0LTExZTUtOWIxMS05YmUzNDdhMDljZTAiLCJ0eXBlIjoicmVmcmVzaCJ9.zcggkKv0oLV2oWVlJGHtqekF-MNkl_0Mz5RI4DmqiCQ
-#     name: xaod
-
-# api_endpoints:
-#   - endpoint: https://servicex-release-int-1.servicex.ssl-hep.org/
-#     token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MzEwMjg5ODEsIm5iZiI6MTYzMTAyODk4MSwianRpIjoiOTc4OTAyZGYtNDBjYi00YWU0LTg2M2QtOTEyNzg2N2ZiYTRkIiwiaWRlbnRpdHkiOiJhNTFkYmQ3ZS1kMjc0LTExZTUtOWIxMS05YmUzNDdhMDljZTAiLCJ0eXBlIjoicmVmcmVzaCJ9.QlqzMVF-e4VQ5wCgpLQVX-puQ5oJR7zWXrnxrZk7jK4
-#     name: xaod
-
 api_endpoints:
   - endpoint: https://servicex-release-testing-2.servicex.ssl-hep.org/
     token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MzEwNDA5OTAsIm5iZiI6MTYzMTA0MDk5MCwianRpIjoiZTZhMDJjMWUtN2FiNi00YjhjLTg2MDktNGVhZWRjNGQxMGU2IiwiaWRlbnRpdHkiOiJhNTFkYmQ3ZS1kMjc0LTExZTUtOWIxMS05YmUzNDdhMDljZTAiLCJ0eXBlIjoicmVmcmVzaCJ9.d0SohpdixJ_dnenjiG8NmTdjZ8E_OGjhofEn0cIZSgc
