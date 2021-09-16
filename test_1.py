@@ -1,4 +1,5 @@
 import sys
+import time
 import random
 from func_adl_servicex import ServiceXSourceXAOD
 
@@ -15,3 +16,4 @@ df = src \
     .AsPandasDF('JetPt') \
     .value()
 print(df)
+time.sleep(300)
