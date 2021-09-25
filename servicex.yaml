@@ -7,7 +7,11 @@ api_endpoints:
     endpoint: https://servicex-release-testing-2.servicex.ssl-hep.org/
     token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MzI0MjcyMTcsIm5iZiI6MTYzMjQyNzIxNywianRpIjoiNDA3ZmJkZWUtYjhjMS00MTUyLTk1MWEtOTk4NWI1OTkzNWE1IiwiaWRlbnRpdHkiOiJhNTFkYmQ3ZS1kMjc0LTExZTUtOWIxMS05YmUzNDdhMDljZTAiLCJ0eXBlIjoicmVmcmVzaCJ9.N2MVgdlDj0SQrDYCcbkO5mhCmliwYB-HGzw94dmAF2o
     type: xaod
-  - name: xaod-af
+  - name: xaod-af-test1
     endpoint: https://servicex-release-testing-1.servicex.af.uchicago.edu/
     token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MzIzMzkwMjQsIm5iZiI6MTYzMjMzOTAyNCwianRpIjoiZGJjMDhkY2YtMzdhNC00OTZkLTg0M2YtMzhjODkxYzhmOTZiIiwiaWRlbnRpdHkiOiJhNTFkYmQ3ZS1kMjc0LTExZTUtOWIxMS05YmUzNDdhMDljZTAiLCJ0eXBlIjoicmVmcmVzaCJ9.Ik87El2lI1JPv8rwJBDD9ACvVjRUr5KhM_aUW7luXx8
+    type: xaod
+  - name: xaod-af
+    endpoint: https://xaod.servicex.af.uchicago.edu/
+    token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MzI1NDI3ODgsIm5iZiI6MTYzMjU0Mjc4OCwianRpIjoiMmQ0Y2UwMTYtNGJlZC00NjcxLTk0YTgtYTdlNzNjMGIyOTk2IiwiaWRlbnRpdHkiOiJhNTFkYmQ3ZS1kMjc0LTExZTUtOWIxMS05YmUzNDdhMDljZTAiLCJ0eXBlIjoicmVmcmVzaCJ9.PgP7f2SDu4BRqaVwJnTY5P2XViXYW2WMnbY1nhR8hkY
     type: xaod
