@@ -10,8 +10,10 @@ dataset_name = "data17_13TeV:data17_13TeV.periodK.physics_Main.PhysCont.DAOD_PHY
 
 if len(sys.argv) > 1:
     dataset_name = sys.argv[1]
+if len(sys.argv) > 2:
+    backend = sys.argv[2]
 
-src = ServiceXSourceXAOD(dataset_name)
+src = ServiceXSourceXAOD(dataset_name, backend=backend)
 df = src \
     .SelectMany('lambda e: e.Jets("AntiKt4EMTopoJets")') \
     .Select('lambda j: j.pt()/'+str(random.random())) \
