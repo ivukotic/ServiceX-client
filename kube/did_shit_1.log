@@ -1,0 +1,144 @@
+Tue Oct 12 18:49:23 UTC 2021
+ls: cannot access /etc/grid-security/x509up: No such file or directory
+INFO xaod did-finder none Waiting for the proxy.
+INFO xaod did-finder none Got proxy.
+Tue Oct 12 18:49:28 UTC 2021
+/etc/grid-security/x509up
+INFO xaod rucio_did_finder None Pika version 1.1.0 connecting to ('10.108.243.13', 5672)
+INFO xaod rucio_did_finder None Socket connected: <socket.socket fd=6, family=AddressFamily.AF_INET, type=2049, proto=6, laddr=('192.168.216.58', 38484), raddr=('10.108.243.13', 5672)>
+INFO xaod rucio_did_finder None Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f30b4ace9e8>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f30b4ace9e8> params=<URLParameters host=xaod-rabbitmq port=5672 virtual_host=/ ssl=False>>).
+INFO xaod rucio_did_finder None AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f30b4ace9e8> params=<URLParameters host=xaod-rabbitmq port=5672 virtual_host=/ ssl=False>>
+INFO xaod rucio_did_finder None AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f30b4ace9e8> params=<URLParameters host=xaod-rabbitmq port=5672 virtual_host=/ ssl=False>>
+INFO xaod rucio_did_finder None Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f30b4ace9e8> params=<URLParameters host=xaod-rabbitmq port=5672 virtual_host=/ ssl=False>>
+INFO xaod rucio_did_finder None Created channel=1
+INFO xaod rucio_did_finder None Connected to RabbitMQ. Ready to start consuming requests
+INFO xaod rucio_did_finder 044b7c21-b4bc-4177-a45d-8c6878cf346e Received DID request {'request_id': '044b7c21-b4bc-4177-a45d-8c6878cf346e', 'did': 'data18_13TeV:data18_13TeV.periodB.physics_Main.PhysCont.DAOD_PHYS.grp18_v01_p4150', 'service-endpoint': 'http://xaod-servicex-app:8000/servicex/internal/transformation/044b7c21-b4bc-4177-a45d-8c6878cf346e'}
+INFO xaod rucio_did_finder None data18_13TeV:data18_13TeV.periodB.physics_Main.PhysCont.DAOD_PHYS.grp18_v01_p4150 is a container of 19 datasets.
+INFO xaod rucio_did_finder None Lookup finished. Metric: {"requestId": "044b7c21-b4bc-4177-a45d-8c6878cf346e", "n_files": 9339, "size": 11795345094811, "avg_replicas": 2.863368669022379, "lookup_duration": 367.409031}
+ERROR xaod rucio_did_finder None _AsyncBaseTransport._produce() failed, aborting connection: error=ConnectionResetError(104, 'Connection reset by peer'); sock=<socket.socket fd=6, family=AddressFamily.AF_INET, type=2049, proto=6, laddr=('192.168.216.58', 38484)>; Caller's stack:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/pika/adapters/utils/io_services_utils.py", line 1097, in _on_socket_writable
+    self._produce()
+  File "/usr/local/lib/python3.6/site-packages/pika/adapters/utils/io_services_utils.py", line 820, in _produce
+    self._tx_buffers[0])
+  File "/usr/local/lib/python3.6/site-packages/pika/adapters/utils/io_services_utils.py", line 79, in retry_sigint_wrap
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/pika/adapters/utils/io_services_utils.py", line 861, in _sigint_safe_send
+    return sock.send(data)
+ConnectionResetError: [Errno 104] Connection reset by peer
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/pika/adapters/utils/io_services_utils.py", line 1097, in _on_socket_writable
+    self._produce()
+  File "/usr/local/lib/python3.6/site-packages/pika/adapters/utils/io_services_utils.py", line 820, in _produce
+    self._tx_buffers[0])
+  File "/usr/local/lib/python3.6/site-packages/pika/adapters/utils/io_services_utils.py", line 79, in retry_sigint_wrap
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/pika/adapters/utils/io_services_utils.py", line 861, in _sigint_safe_send
+    return sock.send(data)
+ConnectionResetError: [Errno 104] Connection reset by peer
+INFO xaod rucio_did_finder None _AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=ConnectionResetError(104, 'Connection reset by peer'); <socket.socket fd=6, family=AddressFamily.AF_INET, type=2049, proto=6, laddr=('192.168.216.58', 38484)>
+INFO xaod rucio_did_finder None Deactivating transport: state=1; <socket.socket fd=6, family=AddressFamily.AF_INET, type=2049, proto=6, laddr=('192.168.216.58', 38484)>
+ERROR xaod rucio_did_finder None connection_lost: StreamLostError: ("Stream connection lost: ConnectionResetError(104, 'Connection reset by peer')",)
+INFO xaod rucio_did_finder None AMQP stack terminated, failed to connect, or aborted: opened=True, error-arg=StreamLostError: ("Stream connection lost: ConnectionResetError(104, 'Connection reset by peer')",); pending-error=None
+INFO xaod rucio_did_finder None Stack terminated due to StreamLostError: ("Stream connection lost: ConnectionResetError(104, 'Connection reset by peer')",)
+INFO xaod rucio_did_finder None Closing transport socket and unlinking: state=2; <socket.socket fd=6, family=AddressFamily.AF_INET, type=2049, proto=6, laddr=('192.168.216.58', 38484)>
+ERROR xaod rucio_did_finder None Unexpected connection close detected: StreamLostError: ("Stream connection lost: ConnectionResetError(104, 'Connection reset by peer')",)
+ERROR xaod rucio_did_finder None Failed to connect to RabbitMQ at amqp://user:9V6E4ZCLPM1AAMABX0SSO6MG@xaod-rabbitmq:5672 (try #1). Waiting 10 seconds before trying again
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/servicex_did_finder_lib/communication.py", line 124, in init_rabbit_mq
+    _channel.start_consuming()
+  File "/usr/local/lib/python3.6/site-packages/pika/adapters/blocking_connection.py", line 1866, in start_consuming
+    self._process_data_events(time_limit=None)
+  File "/usr/local/lib/python3.6/site-packages/pika/adapters/blocking_connection.py", line 2027, in _process_data_events
+    self.connection.process_data_events(time_limit=time_limit)
+  File "/usr/local/lib/python3.6/site-packages/pika/adapters/blocking_connection.py", line 834, in process_data_events
+    self._dispatch_channel_events()
+  File "/usr/local/lib/python3.6/site-packages/pika/adapters/blocking_connection.py", line 566, in _dispatch_channel_events
+    impl_channel._get_cookie()._dispatch_events()
+  File "/usr/local/lib/python3.6/site-packages/pika/adapters/blocking_connection.py", line 1494, in _dispatch_events
+    evt.properties, evt.body)
+  File "/usr/local/lib/python3.6/site-packages/servicex_did_finder_lib/communication.py", line 123, in <lambda>
+    rabbit_mq_callback(user_callback, c, m, p, b))
+  File "/usr/local/lib/python3.6/site-packages/servicex_did_finder_lib/communication.py", line 104, in rabbit_mq_callback
+    channel.basic_ack(delivery_tag=method.delivery_tag)
+  File "/usr/local/lib/python3.6/site-packages/pika/adapters/blocking_connection.py", line 2113, in basic_ack
+    self._flush_output()
+  File "/usr/local/lib/python3.6/site-packages/pika/adapters/blocking_connection.py", line 1336, in _flush_output
+    self._connection._flush_output(lambda: self.is_closed, *waiters)
+  File "/usr/local/lib/python3.6/site-packages/pika/adapters/blocking_connection.py", line 522, in _flush_output
+    raise self._closed_result.value.error
+pika.exceptions.StreamLostError: Stream connection lost: ConnectionResetError(104, 'Connection reset by peer')
+INFO xaod rucio_did_finder None Pika version 1.1.0 connecting to ('10.108.243.13', 5672)
+INFO xaod rucio_did_finder None Socket connected: <socket.socket fd=6, family=AddressFamily.AF_INET, type=2049, proto=6, laddr=('192.168.216.58', 38486), raddr=('10.108.243.13', 5672)>
+INFO xaod rucio_did_finder None Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f30b4061a58>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f30b4061a58> params=<URLParameters host=xaod-rabbitmq port=5672 virtual_host=/ ssl=False>>).
+INFO xaod rucio_did_finder None AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f30b4061a58> params=<URLParameters host=xaod-rabbitmq port=5672 virtual_host=/ ssl=False>>
+INFO xaod rucio_did_finder None AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f30b4061a58> params=<URLParameters host=xaod-rabbitmq port=5672 virtual_host=/ ssl=False>>
+INFO xaod rucio_did_finder None Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f30b4061a58> params=<URLParameters host=xaod-rabbitmq port=5672 virtual_host=/ ssl=False>>
+INFO xaod rucio_did_finder None Created channel=1
+INFO xaod rucio_did_finder None Connected to RabbitMQ. Ready to start consuming requests
+INFO xaod rucio_did_finder 044b7c21-b4bc-4177-a45d-8c6878cf346e Received DID request {'request_id': '044b7c21-b4bc-4177-a45d-8c6878cf346e', 'did': 'data18_13TeV:data18_13TeV.periodB.physics_Main.PhysCont.DAOD_PHYS.grp18_v01_p4150', 'service-endpoint': 'http://xaod-servicex-app:8000/servicex/internal/transformation/044b7c21-b4bc-4177-a45d-8c6878cf346e'}
+INFO xaod rucio_did_finder None data18_13TeV:data18_13TeV.periodB.physics_Main.PhysCont.DAOD_PHYS.grp18_v01_p4150 is a container of 19 datasets.
+INFO xaod rucio_did_finder None Lookup finished. Metric: {"requestId": "044b7c21-b4bc-4177-a45d-8c6878cf346e", "n_files": 9339, "size": 11795345094811, "avg_replicas": 2.863368669022379, "lookup_duration": 268.562429}
+ERROR xaod rucio_did_finder None _AsyncBaseTransport._produce() failed, aborting connection: error=ConnectionResetError(104, 'Connection reset by peer'); sock=<socket.socket fd=6, family=AddressFamily.AF_INET, type=2049, proto=6, laddr=('192.168.216.58', 38486)>; Caller's stack:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/pika/adapters/utils/io_services_utils.py", line 1097, in _on_socket_writable
+    self._produce()
+  File "/usr/local/lib/python3.6/site-packages/pika/adapters/utils/io_services_utils.py", line 820, in _produce
+    self._tx_buffers[0])
+  File "/usr/local/lib/python3.6/site-packages/pika/adapters/utils/io_services_utils.py", line 79, in retry_sigint_wrap
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/pika/adapters/utils/io_services_utils.py", line 861, in _sigint_safe_send
+    return sock.send(data)
+ConnectionResetError: [Errno 104] Connection reset by peer
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/pika/adapters/utils/io_services_utils.py", line 1097, in _on_socket_writable
+    self._produce()
+  File "/usr/local/lib/python3.6/site-packages/pika/adapters/utils/io_services_utils.py", line 820, in _produce
+    self._tx_buffers[0])
+  File "/usr/local/lib/python3.6/site-packages/pika/adapters/utils/io_services_utils.py", line 79, in retry_sigint_wrap
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/pika/adapters/utils/io_services_utils.py", line 861, in _sigint_safe_send
+    return sock.send(data)
+ConnectionResetError: [Errno 104] Connection reset by peer
+INFO xaod rucio_did_finder None _AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=ConnectionResetError(104, 'Connection reset by peer'); <socket.socket fd=6, family=AddressFamily.AF_INET, type=2049, proto=6, laddr=('192.168.216.58', 38486)>
+INFO xaod rucio_did_finder None Deactivating transport: state=1; <socket.socket fd=6, family=AddressFamily.AF_INET, type=2049, proto=6, laddr=('192.168.216.58', 38486)>
+ERROR xaod rucio_did_finder None connection_lost: StreamLostError: ("Stream connection lost: ConnectionResetError(104, 'Connection reset by peer')",)
+INFO xaod rucio_did_finder None AMQP stack terminated, failed to connect, or aborted: opened=True, error-arg=StreamLostError: ("Stream connection lost: ConnectionResetError(104, 'Connection reset by peer')",); pending-error=None
+INFO xaod rucio_did_finder None Stack terminated due to StreamLostError: ("Stream connection lost: ConnectionResetError(104, 'Connection reset by peer')",)
+INFO xaod rucio_did_finder None Closing transport socket and unlinking: state=2; <socket.socket fd=6, family=AddressFamily.AF_INET, type=2049, proto=6, laddr=('192.168.216.58', 38486)>
+ERROR xaod rucio_did_finder None Unexpected connection close detected: StreamLostError: ("Stream connection lost: ConnectionResetError(104, 'Connection reset by peer')",)
+ERROR xaod rucio_did_finder None Failed to connect to RabbitMQ at amqp://user:9V6E4ZCLPM1AAMABX0SSO6MG@xaod-rabbitmq:5672 (try #2). Waiting 10 seconds before trying again
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/servicex_did_finder_lib/communication.py", line 124, in init_rabbit_mq
+    _channel.start_consuming()
+  File "/usr/local/lib/python3.6/site-packages/pika/adapters/blocking_connection.py", line 1866, in start_consuming
+    self._process_data_events(time_limit=None)
+  File "/usr/local/lib/python3.6/site-packages/pika/adapters/blocking_connection.py", line 2027, in _process_data_events
+    self.connection.process_data_events(time_limit=time_limit)
+  File "/usr/local/lib/python3.6/site-packages/pika/adapters/blocking_connection.py", line 834, in process_data_events
+    self._dispatch_channel_events()
+  File "/usr/local/lib/python3.6/site-packages/pika/adapters/blocking_connection.py", line 566, in _dispatch_channel_events
+    impl_channel._get_cookie()._dispatch_events()
+  File "/usr/local/lib/python3.6/site-packages/pika/adapters/blocking_connection.py", line 1494, in _dispatch_events
+    evt.properties, evt.body)
+  File "/usr/local/lib/python3.6/site-packages/servicex_did_finder_lib/communication.py", line 123, in <lambda>
+    rabbit_mq_callback(user_callback, c, m, p, b))
+  File "/usr/local/lib/python3.6/site-packages/servicex_did_finder_lib/communication.py", line 104, in rabbit_mq_callback
+    channel.basic_ack(delivery_tag=method.delivery_tag)
+  File "/usr/local/lib/python3.6/site-packages/pika/adapters/blocking_connection.py", line 2113, in basic_ack
+    self._flush_output()
+  File "/usr/local/lib/python3.6/site-packages/pika/adapters/blocking_connection.py", line 1336, in _flush_output
+    self._connection._flush_output(lambda: self.is_closed, *waiters)
+  File "/usr/local/lib/python3.6/site-packages/pika/adapters/blocking_connection.py", line 522, in _flush_output
+    raise self._closed_result.value.error
+pika.exceptions.StreamLostError: Stream connection lost: ConnectionResetError(104, 'Connection reset by peer')
+INFO xaod rucio_did_finder None Pika version 1.1.0 connecting to ('10.108.243.13', 5672)
+INFO xaod rucio_did_finder None Socket connected: <socket.socket fd=6, family=AddressFamily.AF_INET, type=2049, proto=6, laddr=('192.168.216.58', 38488), raddr=('10.108.243.13', 5672)>
+INFO xaod rucio_did_finder None Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f30b4056b38>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f30b4056b38> params=<URLParameters host=xaod-rabbitmq port=5672 virtual_host=/ ssl=False>>).
+INFO xaod rucio_did_finder None AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f30b4056b38> params=<URLParameters host=xaod-rabbitmq port=5672 virtual_host=/ ssl=False>>
+INFO xaod rucio_did_finder None AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f30b4056b38> params=<URLParameters host=xaod-rabbitmq port=5672 virtual_host=/ ssl=False>>
+INFO xaod rucio_did_finder None Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f30b4056b38> params=<URLParameters host=xaod-rabbitmq port=5672 virtual_host=/ ssl=False>>
+INFO xaod rucio_did_finder None Created channel=1
+INFO xaod rucio_did_finder None Connected to RabbitMQ. Ready to start consuming requests
+INFO xaod rucio_did_finder 044b7c21-b4bc-4177-a45d-8c6878cf346e Received DID request {'request_id': '044b7c21-b4bc-4177-a45d-8c6878cf346e', 'did': 'data18_13TeV:data18_13TeV.periodB.physics_Main.PhysCont.DAOD_PHYS.grp18_v01_p4150', 'service-endpoint': 'http://xaod-servicex-app:8000/servicex/internal/transformation/044b7c21-b4bc-4177-a45d-8c6878cf346e'}
+INFO xaod rucio_did_finder None data18_13TeV:data18_13TeV.periodB.physics_Main.PhysCont.DAOD_PHYS.grp18_v01_p4150 is a container of 19 datasets.
