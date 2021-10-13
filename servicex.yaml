@@ -13,5 +13,5 @@ api_endpoints:
     type: uproot
   - name: xaod-af
     endpoint: https://xaod.servicex.af.uchicago.edu/
-    token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MzI1NDI3ODgsIm5iZiI6MTYzMjU0Mjc4OCwianRpIjoiMmQ0Y2UwMTYtNGJlZC00NjcxLTk0YTgtYTdlNzNjMGIyOTk2IiwiaWRlbnRpdHkiOiJhNTFkYmQ3ZS1kMjc0LTExZTUtOWIxMS05YmUzNDdhMDljZTAiLCJ0eXBlIjoicmVmcmVzaCJ9.PgP7f2SDu4BRqaVwJnTY5P2XViXYW2WMnbY1nhR8hkY
+    token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MzQxNDEzNzMsIm5iZiI6MTYzNDE0MTM3MywianRpIjoiMjRkMWI1MWMtMmViMC00ZjY4LTlhMTctZGEyMjRmYmVkMzZlIiwiaWRlbnRpdHkiOiJhNTFkYmQ3ZS1kMjc0LTExZTUtOWIxMS05YmUzNDdhMDljZTAiLCJ0eXBlIjoicmVmcmVzaCJ9.WPKUhnTCVR6Xwx5Ud4G7nFYddWevCKkVWkgXU7BQLu4
     type: xaod

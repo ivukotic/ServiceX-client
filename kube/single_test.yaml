@@ -21,7 +21,7 @@ spec:
           command: ["python3"]
           args:
             [
-              "test_2.py",
+              "test_1.py",
               "data18_13TeV:data18_13TeV.periodB.physics_Main.PhysCont.DAOD_PHYS.grp18_v01_p4150",
               "xaod-af",
             ]
