@@ -10,7 +10,6 @@ if len(sys.argv) > 2:
 
 src = ServiceXSourceUpROOT(dataset_name, "CollectionTree", backend_name=backend)
 data = src.Select("lambda e: {'JetPT': e['AnalysisJetsAuxDyn.pt']}") \
-    .AsParquetFiles('junk.parquet') \
-    .value()
+    .AsAwkwardArray().value()
 df = pd.read_parquet(data[0])
 print(df)
