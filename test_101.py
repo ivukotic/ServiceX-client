@@ -8,7 +8,7 @@ if len(sys.argv) > 1:
 if len(sys.argv) > 2:
     backend = sys.argv[2]
 
-src = ServiceXSourceUpROOT(dataset_name, "CollectionTree", backend=backend)
+src = ServiceXSourceUpROOT(dataset_name, "CollectionTree", backend_name=backend)
 data = src.Select("lambda e: {'JetPT': e['AnalysisJetsAuxDyn.pt']}") \
     .AsParquetFiles('junk.parquet') \
     .value()
