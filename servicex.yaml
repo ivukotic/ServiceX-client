@@ -15,3 +15,8 @@ api_endpoints:
     endpoint: https://xaod.servicex.af.uchicago.edu/
     token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MzYwNDM5MzcsIm5iZiI6MTYzNjA0MzkzNywianRpIjoiOGExZWUxNzctODUzMy00M2RkLTg0MzQtNTVjNmUxMTBhYTBmIiwiaWRlbnRpdHkiOiJhNTFkYmQ3ZS1kMjc0LTExZTUtOWIxMS05YmUzNDdhMDljZTAiLCJ0eXBlIjoicmVmcmVzaCJ9.S72KHcFVuXbLgKevuChSQEwDxD9eQcpQAGK6AjXTFsk
     type: xaod
+
+  - name: xaod-fabric
+    endpoint: https://xaod.fabric-servicex.ssl-hep.org/
+    token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MzgyOTYwNzAsIm5iZiI6MTYzODI5NjA3MCwianRpIjoiMDE4OTIwNjYtYzlhZC00MTA1LTgwN2YtZGMyMGYxY2IxOGVmIiwiaWRlbnRpdHkiOiJhNTFkYmQ3ZS1kMjc0LTExZTUtOWIxMS05YmUzNDdhMDljZTAiLCJ0eXBlIjoicmVmcmVzaCJ9.xkqD__csngvFgaTEGljiXn-uk5jnNN7fNpHU6PJsKdo
+    type: xaod

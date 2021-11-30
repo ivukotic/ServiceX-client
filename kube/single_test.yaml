@@ -34,8 +34,8 @@ spec:
             # xaod-af
           resources:
             requests:
-              memory: "4Gi"
+              memory: "8Gi"
               cpu: "500m"
             limits:
-              memory: "8Gi"
+              memory: "16Gi"
               cpu: "1000m"
