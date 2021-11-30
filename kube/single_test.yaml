@@ -24,7 +24,7 @@ spec:
             [
               "test_1.py",
               "data18_13TeV:data18_13TeV.periodB.physics_Main.PhysCont.DAOD_PHYS.grp18_v01_p4150",
-              "xaod-af",
+              "xaod-fabric",
             ]
             # data18_13TeV:data18_13TeV.periodAllYear.physics_Main.PhysCont.DAOD_PHYS.grp18_v01_p4150 HUGE
             # data18_13TeV:data18_13TeV.periodB.physics_Main.PhysCont.DAOD_PHYS.grp18_v01_p4150 one period
